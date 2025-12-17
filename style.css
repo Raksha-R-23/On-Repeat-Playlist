@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+nav{
+font-family: 'Ubuntu', sans-serif ;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 62px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+width: 160px;
+padding: 2 8px;
+margin-top: 10px;
+}
+
+.brand {
+    display: flex;
+   align-items: center;
+   font-weight: bolder;
+   font-size: 1.3rem;
+}
+
+.container{
+    min-height: 68.5vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela', sans-serif;
+   display: flex;
+   margin: 33px auto;
+   width: 70%;
+   border-radius: 8px;
+   padding: 50px;
+   background-image: url('ch.png');
+   padding-top: 22px; /* adjust as needed */
+}
+
+
+.bottom {
+    position: fixed;
+    height: 82px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+    accent-color: #FF69B4
+
+}
+
+.songItemContainer{
+    margin-top: 57px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+background-color: white;
+width: 110%;
+color: black;
+margin: 20px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 5px;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 5px;
+}
+
+.timestamp{
+    margin: 0 10px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela', sans-serif;
+
+    display: flex;
+    align-items: center;   /* centers text vertically with gif */
+    gap: 10px;             /* space between gif and text */
+}
+
+
+.songInfo img {
+    width: 50px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    transform: translateY(5px);
+
+}
+
+#masterSongName {
+    font-size: 14px;
+    color: white;
+    line-height: 1;        /* keeps text tight & centered */
+    transform: translateY(10px);
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
