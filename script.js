@@ -104,7 +104,6 @@ document.getElementById('next').addEventListener('click', () => {
     masterPlay.classList.add('fa-circle-pause');
 });
 
-
 // Previous
 document.getElementById('previous').addEventListener('click', () => {
     makeAllPlays();
@@ -122,3 +121,4 @@ document.getElementById('previous').addEventListener('click', () => {
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
 });
+
